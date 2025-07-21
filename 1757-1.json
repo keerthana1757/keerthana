@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "e4f87f16-0392-4f91-bef5-9a23b6154650",
+      "cell_type": "code",
+      "source": "import math\n\n# Hard-coded values for a, b, c\na = 1\nb = -3\nc = 2\n\n# Calculating the discriminant\ndiscriminant = b**2 - 4*a*c\n\n# Checking if discriminant is non-negative\nif discriminant >= 0:\n    # Two real solutions\n    root1 = (-b + math.sqrt(discriminant)) / (2*a)\n    root2 = (-b - math.sqrt(discriminant)) / (2*a)\n    print(f\"Real roots: {root1} and {root2}\")\nelse:\n    print(\"No real roots.\")\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Real roots: 2.0 and 1.0\n"
+        }
+      ],
+      "execution_count": 1
+    },
+    {
+      "id": "92fdc7f3-5602-4743-94fe-ea2ba3018454",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
