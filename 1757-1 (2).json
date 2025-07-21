@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "729a2164-5a71-4973-985e-26aecccef427",
+      "cell_type": "code",
+      "source": "import math\n\ndef solve_quadratic(a, b, c):\n    discriminant = b**2 - 4*a*c\n    if discriminant < 0:\n        return None\n    elif discriminant == 0:\n        root = -b / (2*a)\n        return (root,)\n    else:\n        root1 = (-b + math.sqrt(discriminant)) / (2*a)\n        root2 = (-b - math.sqrt(discriminant)) / (2*a)\n        return (root1, root2)\n\ndef main():\n    a = 1\n    b = -5\n    c = 6\n\n    roots = solve_quadratic(a, b, c)\n    if roots is None:\n        print(\"No real roots for the weather model.\")\n    else:\n        print(f\"Roots of the quadratic (weather model) are: {roots}\")\n\nif __name__ == \"__main__\":\n    main()\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Roots of the quadratic (weather model) are: (3.0, 2.0)\n"
+        }
+      ],
+      "execution_count": 1
+    },
+    {
+      "id": "cb124601-5621-4b61-b91f-4097ce919d82",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
